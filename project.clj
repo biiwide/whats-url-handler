@@ -8,4 +8,14 @@
             :url "https://www.eclipse.org/legal/epl-2.0"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]]
+
+  :release-tasks [["vcs" "assert-committed"]
+                  ["change" "version" "leiningen.release/bump-version" "release"]
+                  ["vcs" "commit"]
+                  ["vcs" "tag" "--no-sign"]
+                  ["deploy"]
+                  ["change" "version" "leiningen.release/bump-version"]
+                  ["vcs" "commit"]
+                  ["vcs" "push"]]
+
   )
