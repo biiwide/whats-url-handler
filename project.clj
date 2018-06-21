@@ -1,4 +1,4 @@
-(defproject biiwide/whats-url-handler "0.0.1"
+(defproject biiwide/whats-url-handler "0.0.2-SNAPSHOT"
 
   :description "Clojure library for registering custom URL protocol handlers."
 
